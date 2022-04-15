@@ -1,0 +1,21 @@
+<div id=“app”>
+  <h1>Vue Mart</h1>
+  <h2>Shopping Cart</h2>
+  <ul>
+    <li v-for=“item in shoppingCart”>
+      {{ item.label }} : {{ item.cost }}€
+    </li>
+  </ul>
+</div>
+<script>
+  const app = new Vue({
+    el: ‘#app’,
+    data: {
+      shoppingCart: [
+        { label: ‘Pommes’, cost: 6 },
+                { label: ‘Bananes’, cost: 2 },
+    { label: ‘Noix de coco’, cost: 8 }
+            ]
+        }
+    })
+</script>
